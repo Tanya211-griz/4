@@ -1,0 +1,112 @@
+header {
+    background-color: wheat;
+    display: grid;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo:hover {
+    animation: spin 1.5s infinite;
+}
+
+nav {
+    display: grid;
+    background-color: darksalmon;
+}
+
+nav a {
+    color: midnightblue;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: bisque;
+    font-size: 120%;
+}
+
+.content {
+    display: grid;
+    color: indigo;
+    background-color: blanchedalmond;
+}
+
+header h1{
+    color: darkgoldenrod;
+}
+
+table {
+    border: 1px solid #69c;
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+#table1Caption {
+    font-size: 25px;
+}
+
+th, td {
+    border: 2px solid #69c;
+}
+
+tr:nth-child(odd) {
+    background-color: coral;
+    color: mediumblue;
+}
+
+tr:nth-child(even) {
+    background-color: green;
+    color: gold;
+}
+
+footer {
+    color: darkblue;
+    background-color: #ffdead;
+    min-height: 75px;
+}
+
+form {
+    display: grid;
+}
+
+form button {
+    height: 50px;
+    background-color: navajowhite;
+}
+
+form textarea {
+    height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        color: indigo;
+        background-color: blanchedalmond;
+        max-width: 960px;
+    }
+
+    .content ul {
+        order: -1;
+    }
+
+    header {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        float: right;
+        height: 50px;
+        align-content: center;
+        background-color: darksalmon;
+    }
+
+    header h1 {
+        align-content: center;
+    }
+
+}
